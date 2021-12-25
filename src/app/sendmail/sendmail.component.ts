@@ -18,7 +18,7 @@ export class SendmailComponent implements OnInit {
 
   sendmail(){
     
-    this.messageService.add(`Your mail to ${this.employee?.fname} was sent!`);
+    this.messageService.add(`Your mail to ${this.employee?.fname} ${this.employee?.lname} was sent!`);
   }
 
 }
