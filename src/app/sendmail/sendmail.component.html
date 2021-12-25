@@ -1,0 +1,19 @@
+<div class="visitcard">
+    <h2>Mail to : {{employee!.fname | uppercase}} {{employee!.lname |uppercase}}</h2>
+    <div class="form">
+    <label for="To">To: </label>
+    <input id="To" placeholder="to">
+    
+    <label for="Cc">Cc: </label>
+    <input id="Cc" placeholder="cc">
+    
+    <label for="Subject">Subject: </label>
+    <input id="Subject" placeholder="subject">
+    
+    <label for="msg">My message: </label>
+    <textarea id="msg" cols="30" rows="2"></textarea>
+    <label></label>
+    <button id="mail" (click)="sendmail()">Send</button>
+    <!-- <a href="mailto:{{employee!.email}}" >{{employee!.email}}</a> -->
+  </div>
+</div>

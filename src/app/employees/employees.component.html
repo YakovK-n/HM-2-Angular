@@ -1,0 +1,32 @@
+<div class="wrapper">
+    <div>
+        <table>
+        <thead id="borderhead">
+            <th colspan="7">Emploee list</th>
+        </thead>
+        <th>check</th>
+        <th>id</th>
+        <th>fname</th>
+        <th>lname</th>
+        <th>dateofbirth</th>
+        <th>salary</th>
+        <th>email</th>
+
+        <tr *ngFor="let employee of employees" [class.selected]="employee === selectedEmployee" (click)="onSelect(employee)" >
+        <td><input type="checkbox"></td>    
+        <td><span>{{employee.id}}</span></td> 
+        <td>{{employee.fname}}</td>
+        <td>{{employee.lname}}</td>
+        <td>{{employee.dateofbirth}}</td>
+        <td>{{employee.salary}}</td>
+        <td>{{employee.email}}</td>
+        </tr>
+
+        </table>
+        <app-messages></app-messages>
+    </div>  
+    
+    <app-details-of-employee [employee]="selectedEmployee"></app-details-of-employee>
+
+ 
+</div>     

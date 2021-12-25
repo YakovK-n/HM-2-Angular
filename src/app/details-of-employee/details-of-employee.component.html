@@ -1,0 +1,35 @@
+<div *ngIf="employee">
+    <div class="visitcard">
+    <h2>{{employee.fname | uppercase}} {{employee.lname |
+        uppercase}} Details</h2>
+        <div class="form">
+        <label for="employee-id">ID: </label> {{employee.id}}
+        <label for="employee-fname">employee first name: </label>
+        <input id="employee-fname" [(ngModel)]="employee.fname"
+        placeholder="fname">
+        <!-- <br> -->
+        <label for="employee-lname">employee last name: </label>
+        <input id="employee-lname" [(ngModel)]="employee.lname"
+        placeholder="lname">
+        <!-- <br> -->
+        <label for="employee-dateofbirth">employee date of birth: </label>
+        <input disabled id="employee-dateofbirth" [(ngModel)]="employee.dateofbirth"
+        placeholder="dateofbirth">
+        <!-- <br> -->
+        <label for="employee-salary">employee salary: </label>
+        <input id="employee-salary" [(ngModel)]="employee.salary"
+        placeholder="salary">
+        <!-- <br> -->
+        <label for="employee-email">employee email: </label>
+        <!-- <input id="employee-email" [(ngModel)]="employee.email"
+        placeholder="email"> -->
+        <div><input id="employee-email" [(ngModel)]="employee.email"><button (click)="shownow()">Send email</button></div>
+        <!-- <--<button (click)="onSave()">Save</button>-->
+        </div>
+        </div>
+        <br>
+        <app-sendmail [employee] = "employee" *ngIf="status" ></app-sendmail>
+        
+        
+
+        

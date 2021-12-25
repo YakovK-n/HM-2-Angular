@@ -1,0 +1,24 @@
+footer {
+    font-size: 0.7em;
+    display: flex;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 0px;    
+  }
+
+  img {
+    width: 30px;
+    height: 30px;
+    padding-top: 0.8em;
+    padding-right: 0.3em;
+    vertical-align: middle;
+  }
+
+  .footer div {
+      padding: 4px;
+      color: greenyellow;
+      font-size: 1.8em;
+  }

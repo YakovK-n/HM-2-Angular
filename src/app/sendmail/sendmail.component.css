@@ -1,0 +1,25 @@
+
+  
+  .visitcard {
+    background-color: lightslategrey;
+    padding: 10px;
+    border-radius: 10px;
+    
+    height: max-content;
+    width: max-content;
+  }
+  
+  
+  button{
+    background-color: mediumaquamarine;
+  }
+
+  .form{
+    display  : grid;
+    
+    grid-template-columns: auto auto;
+    
+  }
+ 
+
+ 
